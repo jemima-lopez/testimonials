@@ -1,0 +1,61 @@
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(214, 17%, 92%);
+    font-size: 13px;
+    width: 500px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 90%;
+    margin: 10px auto;
+    padding: 1rem;
+}
+.grid-container{
+    display: grid;
+}
+
+.grid-container--fill{
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+
+.grid-item-1{
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    
+}
+
+.grid-item-2{
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}   
+.grid-item-3{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.grid-item-4{
+    background-color: hsl(0, 0%, 7%);
+    color: hsl(214, 17%, 92%);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.grid-item-5{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
