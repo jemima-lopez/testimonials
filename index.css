@@ -25,47 +25,12 @@ body{
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 
 }
-
-.grid-container--fill{
-    grid-auto-rows: repeat(auto-fit, minmax(12rem, 1fr));
-}
-
-.grid-item-1{
-    background-color: hsl(263, 55%, 52%);
-    color: white;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    
-}
-
-.grid-item-2{
-    background-color: hsl(219, 29%, 14%);
-    color: white;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
-}   
-.grid-item-3{
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(217, 19%, 35%);
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
-}
-.grid-item-4{
-    background-color: hsl(0, 0%, 7%);
-    color: hsl(214, 17%, 92%);
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
-}
-.grid-item-5{
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(217, 19%, 35%);
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
+card{
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    margin: 10px;
 }
 
 img{
@@ -104,46 +69,67 @@ img{
   margin: 0;
   font-weight: 400;
 }
+h3{
+    margin: 30px;
+    border: 10px;
+    font-size: 1rem;
+}
 
-.grid-item-1 {
+p{
+    margin: 30px;
+    border: 10px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.uno {
   grid-column: 1 / span 2;
   background: hsl(263, 55%, 52%);
   color: white;
 }
 
-.grid-item-2 {
+.dos {
   grid-column: 3 / 4;
   background: hsl(217, 19%, 35%);
   color: white;
 }
 
-.grid-item-3 {
+.tres {
   grid-column: 1 / 2;
-  background: white;
+  background: hsl(0, 0%, 81%);
+  
 }
 
-.grid-item-4 {
+.cuatro {
   grid-column: 2 / span 2;
   background: hsl(219, 29%, 14%);
   color: white;
 }
 
-.grid-item-5 {
+.cinco {
   grid-column: 4 / 5;
   grid-row: 1 / span 2;
   background: white;
 }
+
+.attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
 
 @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr; 
   }
 
-  .grid-item-1,
-  .grid-item-2,
-  .grid-item-3,
-  .grid-item-4,
-  .grid-item-5 {
+  .uno,
+  .dos,
+  .tres,
+  .cuatro,
+  .cinco {
     grid-column: auto;
     grid-row: auto;
   }
